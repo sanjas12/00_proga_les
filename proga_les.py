@@ -50,8 +50,8 @@ spisokarena = ["Домашка", "Коховского"]
 
 spisokyear = [2016]
 
-##spisokmonth = ["Январь", "Февраль", "Март","Апрель","Май","Июнь","Июль",
-##               "Август","Сентябрь","Октябрь","Ноябрь","Декабрь"]
+# spisokmonth = ["Январь", "Февраль", "Март","Апрель","Май","Июнь","Июль",
+#                "Август","Сентябрь","Октябрь","Ноябрь","Декабрь"]
 
 spisokmonth = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
 
@@ -59,12 +59,12 @@ spisokday = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", 11, 12,
              15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
 
 spisokgol = [1, 2, 3]
-##
-##spisoklab=[lab03, lab09, lab11, lab13, lab15,
-##           lab16, lab17, lab24, lab25, lab26,
-##           lab27, lab28, lab33, lab35, lab56,
-##           lab59, lab64, lab77, lab78, lab79,
-##           lab81, lab85, lab87, lab97]
+
+# spisoklab=[lab03, lab09, lab11, lab13, lab15,
+#           lab16, lab17, lab24, lab25, lab26,
+#           lab27, lab28, lab33, lab35, lab56,
+#           lab59, lab64, lab77, lab78, lab79,
+#           lab81, lab85, lab87, lab97]
 
 
 # объявление имен игроков 
@@ -164,18 +164,18 @@ namePNG = "Result_PNG/" + str(d0) + "_" + str(sop.get()) + ".png"
 var1 = IntVar()
 
 
-##rad0 = Radiobutton(root,text="Дома",variable=var1,value=1)
-##rad1 = Radiobutton(root,text="В гостях", variable=var1,value=2)
-##rad3 = Radiobutton(root,text="Товарняк", variable=var2,value="Товарняк")
-##rad4 = Radiobutton(root,text="Кубок", variable=var2,value="Кубок Старт 2016")
+# rad0 = Radiobutton(root,text="Дома",variable=var1,value=1)
+# rad1 = Radiobutton(root,text="В гостях", variable=var1,value=2)
+# rad3 = Radiobutton(root,text="Товарняк", variable=var2,value="Товарняк")
+# rad4 = Radiobutton(root,text="Кубок", variable=var2,value="Кубок Старт 2016")
 
 def savePNG(event):
     print("Файл PNG создан и сохранен")
-    target_dir_PNG = 'Result_PNG'
-    if not os.path.exists(target_dir_PNG):
-        os.mkdir(target_dir_PNG)  # создание каталога Result_PNG
-        print('Каталог успешно создан', target_dir_PNG)
-        f_PNG = open(namePNG)
+    target_dir_png = 'Result_PNG'
+    if not os.path.exists(target_dir_png):
+        os.mkdir(target_dir_png)  # создание каталога Result_PNG
+        print('Каталог успешно создан', target_dir_png)
+        f_png = open(namePNG)
         print("Файл PNG создан и сохранен")
 
 
@@ -190,8 +190,8 @@ def saveTXT(event):
                  var64.get(), var77.get(), var78.get(), var79.get(),
                  var81.get(), var85.get(), var87.get(), var97.get()]
 
-    spisokpenalty = [penalty03.get(), penalty09.get(), penalty11.get(), penalty13.get() \
-        , penalty15.get(), penalty16.get(), penalty17.get(),
+    spisokpenalty = [penalty03.get(), penalty09.get(), penalty11.get(), penalty13.get(),
+                     penalty15.get(), penalty16.get(), penalty17.get(),
                      penalty24.get(),
                      penalty25.get(), penalty26.get(), penalty27.get(), penalty28.get(),
                      penalty33.get(), penalty35.get(), penalty56.get(), penalty59.get(),
@@ -210,8 +210,8 @@ def saveTXT(event):
              gol33.get() + gol35.get() + gol56.get() + gol59.get() + \
              gol64.get() + gol77.get() + gol78.get() + gol79.get() + \
              gol81.get() + gol85.get() + gol87.get() + gol97.get()
-    spisokgol = [gol03.get(), gol09.get(), gol11.get(), gol13.get() \
-        , gol15.get(), gol16.get(), gol17.get(),
+    spisokgol = [gol03.get(), gol09.get(), gol11.get(), gol13.get(),
+                 gol15.get(), gol16.get(), gol17.get(),
                  gol24.get(),
                  gol25.get(), gol26.get(), gol27.get(), gol28.get(),
                  gol33.get(), gol35.get(), gol56.get(), gol59.get(),
@@ -326,16 +326,16 @@ def provTXT(event):
                  var33.get(), var35.get(), var56.get(), var59.get(),
                  var64.get(), var77.get(), var78.get(), var79.get(),
                  var81.get(), var85.get(), var87.get(), var97.get()]
-    spisokgol = [gol03.get(), gol09.get(), gol11.get(), gol13.get() \
-        , gol15.get(), gol16.get(), gol17.get(),
+    spisokgol = [gol03.get(), gol09.get(), gol11.get(), gol13.get(),
+                 gol15.get(), gol16.get(), gol17.get(),
                  gol24.get(),
                  gol25.get(), gol26.get(), gol27.get(), gol28.get(),
                  gol33.get(), gol35.get(), gol56.get(), gol59.get(),
                  gol64.get(), gol77.get(), gol78.get(), gol79.get(),
                  gol81.get(), gol85.get(), gol87.get(), gol97.get()]
 
-    spisokpenalty = [penalty03.get(), penalty09.get(), penalty11.get(), penalty13.get() \
-        , penalty15.get(), penalty16.get(), penalty17.get(),
+    spisokpenalty = [penalty03.get(), penalty09.get(), penalty11.get(), penalty13.get(),
+                     penalty15.get(), penalty16.get(), penalty17.get(),
                      penalty24.get(),
                      penalty25.get(), penalty26.get(), penalty27.get(), penalty28.get(),
                      penalty33.get(), penalty35.get(), penalty56.get(), penalty59.get(),
@@ -344,8 +344,8 @@ def provTXT(event):
                      penalty81.get(), penalty85.get(),
                      penalty87.get(), penalty97.get()]
 
-    sumgol = gol03.get() + gol09.get() + gol11.get() + gol13.get() \
-             + gol15.get() + gol16.get() + gol17.get() + \
+    sumgol = gol03.get() + gol09.get() + gol11.get() + gol13.get() + \
+             gol15.get() + gol16.get() + gol17.get() + \
              gol24.get() + \
              gol25.get() + gol26.get() + gol27.get() + gol28.get() + \
              gol33.get() + gol35.get() + gol56.get() + gol59.get() + \
@@ -357,8 +357,7 @@ def provTXT(event):
         if g == 1:
             print("Соперник: " + str(menukomand.get()) + "\n")
         if g == 2:
-            print("Счет: " + str(menucount.get()) + ":" +
-                  str(menucount2.get()) + "\n")
+            print("Счет: " + str(menucount.get()) + ":" + str(menucount2.get()) + "\n")
         if g == 3:
             print("Дата Матча: " + str(menuyear.get()) + "_"
                   + str(menumonth.get()) + "_"
@@ -367,14 +366,14 @@ def provTXT(event):
             print("Арена: " + str(menuarena.get()))
         if g == 6:
             sum1 = 0
-            for ge in spisokvar:
+            for _ in spisokvar:
                 if spisokvar[i] == 1:
                     sum1 = sum1 + 1
                     i = i + 1
                 else:
                     i = i + 1
             print("\n" + "Состав(Общее кол-во игроков - " + str(sum1) + "): ")
-            for gel in spisokvar:
+            for _ in spisokvar:
                 if spisokvar[j] == 1:
                     print(str(z) + ". " + spisokigrokFIO[j])
                     j = j + 1
@@ -385,7 +384,7 @@ def provTXT(event):
             print("\n" + "Шайбы забили(Всего забито шайб - " + str(sumgol) + "): ")
             z = 1
             i = 0
-            for zzz in spisokgol:
+            for _ in spisokgol:
                 if spisokgol[i] > 0 and spisokvar[i] == 1:
                     print(str(z) + ". " + spisokigrokFIO[i] +
                           ": " + str(spisokgol[i]))
@@ -397,7 +396,7 @@ def provTXT(event):
             print("\n" + "Удаления: ")
             z = 1
             i = 0
-            for yyy in spisokpenalty:
+            for _ in spisokpenalty:
                 if spisokpenalty[i] > 0 and spisokvar[i] == 1:
                     print(str(z) + ". " + spisokigrokFIO[i] +
                           ": " + str(spisokpenalty[i]))
@@ -440,8 +439,8 @@ def openTXT(event):
                       "Ерюшкин", "Гребнев", "Смовж", "Гурин", "Тараканов",
                       "Лукоянов", "Тихонов", "Рейнский"]
 
-    ##    spisokentdel=[ent03.delete(0,END),ent09.delete(0,END)]
-    ##    spisokentins=[ent03.insert(END,1),ent09.insert(END,1)]
+   # spisokentdel=[ent03.delete(0,END),ent09.delete(0,END)]
+   # spisokentins=[ent03.insert(END,1),ent09.insert(END,1)]
 
     op = askopenfilename(title='Открыть протокол матча',
                          filetypes=[('TXT files', '*.txt'), ],
@@ -601,7 +600,7 @@ def openTXT(event):
         if not findgol == -1:
             goll = i.strip("Шайбы забили: ")
             j = 0
-            ##            print (goll)
+            # print (goll)
             z = 0
             for xxx in range(0, len(spisokigrokFIO)):
 
@@ -671,8 +670,8 @@ def openTXT(event):
                     z = z + 1
 
 
-##        op.next()
-##        op.close()
+       # op.next()
+       # op.close()
 
 
 # отображение ФИО игрока
